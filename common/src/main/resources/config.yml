@@ -1,0 +1,26 @@
+commands:
+  actionbar: true
+  title: true
+
+messages:
+  reloaded: '<color:#77DD77>✔ ʀᴇʟᴏᴀᴅᴇᴅ. The configuration has been reloaded.'
+  command_disabled: "<color:#FAA0A0>✖ ᴇʀʀᴏʀ. This command is disabled in the config."
+
+global_disabled_servers:
+  - servername12345
+
+autotitles_enabled: false
+autotitles:
+  anyname1:
+      title: "<color:#FFD700>🌟 ᴛɪᴛʟᴇ"
+      subtitle: "<color:#FFD700>🌟 sᴜʙᴛɪᴛʟᴇ" # optional
+      time: 30s
+      fade: 1 # optional
+      stay: 1 # optional
+      fadeout: 1 # optional
+      disabled_servers: # optional
+        - servername12345
+  # anyname2:
+  #   title: "<color:#FFD700>🌟 ᴛɪᴛʟᴇ"
+  #   subtitle: "<color:#FFD700>🌟 sᴜʙᴛɪᴛʟᴇ"
+  #   time: 30s

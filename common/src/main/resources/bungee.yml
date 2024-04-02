@@ -1,0 +1,5 @@
+name: bungeeminititle
+version: '${project.version}'
+main: eu.mikart.bungeemt.BungeeMT
+author: AriDev
+description: BungeeMiniTitle is a plugin that allows you to broadcast custom titles.

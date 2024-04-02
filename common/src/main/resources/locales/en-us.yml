@@ -1,0 +1,3 @@
+locales:
+  reloaded: '<color:#77DD77>✔ ʀᴇʟᴏᴀᴅᴇᴅ. The configuration has been reloaded.'
+  command_disabled: "<color:#FAA0A0>✖ ᴇʀʀᴏʀ. This command is disabled in the config."
