@@ -7,12 +7,12 @@
     <parent>
         <groupId>eu.mikart</groupId>
         <artifactId>bungeeminititle</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </parent>
 
     <groupId>eu.mikart.bungeemt</groupId>
     <artifactId>bungeemt-common</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

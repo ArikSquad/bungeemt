@@ -24,12 +24,16 @@ import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.scheduler.ScheduledTask;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Path;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 @Getter
@@ -54,6 +58,15 @@ public final class BungeeMT extends Plugin implements IBungeeMT {
 		commandManager.enableUnstableAPI("help");
 		commandManager.enableUnstableAPI("brigadier");
 		this.loadConfig();
+
+		if (getSettings().isAcfModification()) {
+			try {
+				handleAcf();
+				commandManager.getLocales().loadYamlLanguageFile("acf.yml", Locale.ENGLISH);
+			} catch (IOException e) {
+				getLogger().warning("Failed to load ACF locale file");
+			}
+		}
 
 		commandManager.registerCommand(new TitleCommand(this));
 		commandManager.registerCommand(new ActionbarCommand(this));
@@ -116,6 +129,22 @@ public final class BungeeMT extends Plugin implements IBungeeMT {
 		tasks.clear();
 		loadConfig();
 		registerAutotitles();
+	}
+
+	public void handleAcf() throws IOException {
+		// Create plugin config folder if it doesn't exist
+		if (!getDataFolder().exists()) {
+			getLogger().info("Created config folder: " + getDataFolder().mkdir());
+		}
+
+		File configFile = new File(getDataFolder(), "acf.yml");
+
+		// Copy default config if it doesn't exist
+		if (!configFile.exists()) {
+			FileOutputStream outputStream = new FileOutputStream(configFile); // Throws IOException
+			InputStream in = getResourceAsStream("acf.yml"); // This file must exist in the jar resources folder
+			in.transferTo(outputStream); // Throws IOException
+		}
 	}
 
 	@Override

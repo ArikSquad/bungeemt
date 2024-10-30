@@ -30,6 +30,9 @@ public class Settings {
 	@Comment("All settings related to the commands.")
 	private CommandSettings commands = new CommandSettings();
 
+	@Comment("Whether to load the acf.yml file for changing internal command outputs. This is BUNGEE only since acf hasn't implemented this in Velocity")
+	private boolean acfModification = false;
+
 	@Comment("List of servers where the no titles or actionbars using `everyone` is disabled.")
 	private List<String> global_disabled_servers = List.of("servername12345");
 

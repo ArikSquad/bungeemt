@@ -26,7 +26,7 @@ public class TitleCommand extends BaseCommand {
 
 	@Subcommand("player")
 	@Syntax("<player> <fade> <stay> <fadeOut> <title> [subtitle]")
-	@CommandCompletion("@players @nothing @nothing @nothing @nothing @nothing")
+	@CommandCompletion("@players @range:20 @range:20 @range:20 @nothing @nothing")
 	@CommandPermission("bungeeminititle.title.player")
 	public void onTitle(CommandSource player, OnlinePlayer target, int fade, int stay, int fadeOut, String title, @Optional String subtitle) {
 		if(!plugin.getSettings().getCommands().isTitle()) {
@@ -44,7 +44,7 @@ public class TitleCommand extends BaseCommand {
 
 	@Subcommand("everyone")
 	@Syntax("<fade> <stay> <fadeOut> <title> [subtitle]")
-	@CommandCompletion("@nothing @nothing @nothing @nothing @nothing")
+	@CommandCompletion("@range:20 @range:20 @range:20 @nothing @nothing")
 	@CommandPermission("bungeeminititle.title.everyone")
 	public void onTitle(CommandSource player, int fade, int stay, int fadeOut, String title, @Optional String subtitle) {
 		if(!plugin.getSettings().getCommands().isTitle()) {

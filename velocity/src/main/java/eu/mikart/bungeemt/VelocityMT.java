@@ -33,16 +33,13 @@ import org.slf4j.Logger;
 import java.io.InputStream;
 import java.nio.file.Path;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @Plugin(
 		id = "velocitymt",
 		name = "VelocityMT",
-		version = "1.0.3",
+		version = "1.0.4",
 		authors = {"ArikSquad"},
 		description = "VelocityMT (BungeeMT) is a plugin that allows you to broadcast custom titles."
 )
@@ -214,6 +211,6 @@ public class VelocityMT implements IBungeeMT {
 
 	@Override
 	public String getPluginVersion() {
-		return "1.0.3";
+		return "1.0.4";
 	}
 }

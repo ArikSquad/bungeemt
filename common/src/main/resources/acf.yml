@@ -1,0 +1,10 @@
+acf-core:
+  permission_denied: "I'm sorry, but you do not have permission to perform this command."
+  help_page_information: "- Showing page <c2>{page}</c2> of <c2>{totalpages}</c2> (<c3>{results}</c3> results)."
+  help_no_results=Error: "No more results."
+  help_header: "<c3>=== </c3><c1>Showing help for </c1><c2>{commandprefix}{command}</c2><c3> ===</c3>"
+  help_format: "<c1>{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>"
+  help_detailed_header: "<c3>=== </c3><c1>Showing detailed help for </c1><c2>{commandprefix}{command}</c2><c3> ===</c3>"
+  help_detailed_command_format: "<c1>{command}</c1> <c2>{parameters}</c2> <c3>{separator} {description}</c3>"
+  help_detailed_parameter_format: "<c2>{syntaxorname}</c2>: <c3>{description}</c3>"
+  help_search_header: "<c3>=== </c3><c1>Search results for </c1><c2>{commandprefix}{command} {search}</c2><c3> ===</c3>"

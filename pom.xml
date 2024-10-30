@@ -6,7 +6,7 @@
 
     <groupId>eu.mikart</groupId>
     <artifactId>bungeeminititle</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
 
     <name>bungeeminititle</name>
@@ -19,7 +19,6 @@
     <properties>
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jar.finalName>BungeeMT-plugin-${project.version}</jar.finalName>
     </properties>
 
     <build>

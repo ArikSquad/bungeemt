@@ -6,12 +6,12 @@
 
     <groupId>eu.mikart.bungeemt</groupId>
     <artifactId>bungeemt-velocity</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 
     <parent>
         <groupId>eu.mikart</groupId>
         <artifactId>bungeeminititle</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </parent>
 
     <properties>
@@ -102,7 +102,7 @@
         <dependency>
             <groupId>eu.mikart.bungeemt</groupId>
             <artifactId>bungeemt-common</artifactId>
-            <version>1.0.3</version>
+            <version>1.0.4</version>
         </dependency>
         <dependency>
             <groupId>co.aikar</groupId>
